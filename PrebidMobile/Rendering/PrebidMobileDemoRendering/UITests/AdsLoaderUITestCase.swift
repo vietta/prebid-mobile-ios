@@ -37,21 +37,21 @@ class AdsLoaderUITestCase: RepeatedUITestCase {
                                        line: line)
     }
     
-    func checkNativeAdLoadResult(exampleName: String,
-                                 video: Bool = false,
-                                 successCallback: String,
-                                 file: StaticString = #file,
-                                 line: UInt = #line)
-    {
-        checkNonInterstitialLoadResult(exampleName: exampleName,
-                                       video: video,
-                                       doNotCheckBannerView: true,
-                                       successCallback: successCallback,
-                                       failCallback: nil,
-                                       expectFailure: false,
-                                       file: file,
-                                       line: line)
-    }
+//    func checkNativeAdLoadResult(exampleName: String,
+//                                 video: Bool = false,
+//                                 successCallback: String,
+//                                 file: StaticString = #file,
+//                                 line: UInt = #line)
+//    {
+//        checkNonInterstitialLoadResult(exampleName: exampleName,
+//                                       video: video,
+//                                       doNotCheckBannerView: true,
+//                                       successCallback: successCallback,
+//                                       failCallback: nil,
+//                                       expectFailure: false,
+//                                       file: file,
+//                                       line: line)
+//    }
     
     
     private func checkNonInterstitialLoadResult(exampleName: String,

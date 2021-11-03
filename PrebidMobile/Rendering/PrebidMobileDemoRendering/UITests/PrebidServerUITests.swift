@@ -223,22 +223,22 @@ class PrebidServerUITests: AdsLoaderUITestCase {
                                 callbacks: mopubRewardedCallbacks)
     }
 
-    // MARK: - Native Styles
-    
-    //This test are temporary disabled, as the server returns:
-    //"request.imp[0] uses native, but this bidder doesn't support it"
-    func testBannerNativeStyle() {
-        checkBannerLoadResult(exampleName: "Banner Native Styles")
-    }
-    
-    func testGAMBannerNativeStyle_MRect() {
-        checkBannerLoadResult(exampleName: "Banner Native Styles (GAM) [MRect]")
-    }
-    
-    func testMoPubBannerNativeStyle_OK() {
-        checkBannerLoadResult(exampleName: "Banner Native Styles (MoPub)",
-                              adapterBased: true,
-                              callbacks: mopubBannerCallbacks)
-    }
+//    // MARK: - Native Styles
+//    
+//    //This test are temporary disabled, as the server returns:
+//    //"request.imp[0] uses native, but this bidder doesn't support it"
+//    func testBannerNativeStyle() {
+//        checkBannerLoadResult(exampleName: "Banner Native Styles")
+//    }
+//    
+//    func testGAMBannerNativeStyle_MRect() {
+//        checkBannerLoadResult(exampleName: "Banner Native Styles (GAM) [MRect]")
+//    }
+//    
+//    func testMoPubBannerNativeStyle_OK() {
+//        checkBannerLoadResult(exampleName: "Banner Native Styles (MoPub)",
+//                              adapterBased: true,
+//                              callbacks: mopubBannerCallbacks)
+//    }
 
 }

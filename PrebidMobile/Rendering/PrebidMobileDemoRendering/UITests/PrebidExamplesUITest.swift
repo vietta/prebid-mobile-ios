@@ -399,79 +399,79 @@ class PrebidExamplesUITest: AdsLoaderUITestCase {
                                     callbacks: mopubInterstitialCallbacks)
     }
     
-    // MARK: - Banner Native Styles
-    
-    func testInAppBannerNativeStyleMap_OK() {
-        checkBannerLoadResult(exampleName: "Banner Native Styles (In-App) [MAP]")
-    }
-    
-    func testInAppBannerNativeStyleKeys_OK() {
-        checkBannerLoadResult(exampleName: "Banner Native Styles (In-App) [KEYS]")
-    }
-    
-    func testInAppBannerNativeStyle_NoAssets() {
-        checkBannerLoadResult(exampleName: "Banner Native Styles No Assets (In-App)",
-                              expectFailure: true)
-    }
-    
-    func testGAMBannerNativeStyle_MRect_OK() {
-        checkBannerLoadResult(exampleName: "Banner Native Styles (GAM) [MRect]")
-    }
-    
-    func testGAMBannerNativeStyle_MRect_NoAssets() {
-        checkBannerLoadResult(exampleName: "Banner Native Styles No Assets (GAM) [MRect]",
-                              expectFailure: true)
-    }
-    
-    func testGAMBannerNativeStyle_Fluid_OK() {
-        checkBannerLoadResult(exampleName: "Banner Native Styles (GAM) [Fluid]")
-    }
-    
-    func testMoPubBannerNativeStyle_OK() {
-        checkBannerLoadResult(exampleName: "Banner Native Styles (MoPub)",
-                              adapterBased: true,
-                              callbacks: mopubBannerCallbacks)
-    }
-    
-    func testMoPubBannerNativeStyle_NoAssets() {
-        checkBannerLoadResult(exampleName: "Banner Native Styles No Assets (MoPub)",
-                              adapterBased: true,
-                              callbacks: mopubBannerCallbacks,
-                              expectFailure: true)
-    }
-    
-    // MARK: - Native Ads
-    
-    func testInAppNativeAd_OK() {
-        checkNativeAdLoadResult(exampleName: "Native Ad (In-App)", successCallback: "getNativeAd success")
-    }
-    
-    func testInAppNativeAd_Links() {
-        checkNativeAdLoadResult(exampleName: "Native Ad Links (In-App)", successCallback: "getNativeAd success")
-    }
-    
-    func testMoPubNativeAd_OK() {
-        checkNativeAdLoadResult(exampleName: "Native Ad (MoPub) [OK, PBM Native AdAdapter]",
-                                successCallback: "getNativeAd success")
-    }
-    
-    func testMoPubNativeAdNib_OK() {
-        checkNativeAdLoadResult(exampleName: "Native Ad (MoPub) [OK, PBM Native AdAdapter, Nib]",
-                                successCallback: "getNativeAd success")
-    }
-    
-    func testMoPubNativeAd_WithoutAdapters() {
-        checkNativeAdLoadResult(exampleName: "Native Ad (MoPub) [OK, MPNativeAd]",
-                                successCallback: "getNativeAd success")
-    }
-    
-    func testMoPubNativeAd_noBids() {
-        checkNativeAdLoadResult(exampleName: "Native Ad (MoPub) [noBids, MPNativeAd]",
-                                successCallback: "getNativeAd success")
-    }
-    
-    func testMoPubNativeAd_Video() {
-        checkNativeAdLoadResult(exampleName: "Native Ad Video (MoPub) [OK, PBM Native AdAdapter]",
-                                successCallback: "getNativeAd success")
-    }
+//    // MARK: - Banner Native Styles
+//    
+//    func testInAppBannerNativeStyleMap_OK() {
+//        checkBannerLoadResult(exampleName: "Banner Native Styles (In-App) [MAP]")
+//    }
+//    
+//    func testInAppBannerNativeStyleKeys_OK() {
+//        checkBannerLoadResult(exampleName: "Banner Native Styles (In-App) [KEYS]")
+//    }
+//    
+//    func testInAppBannerNativeStyle_NoAssets() {
+//        checkBannerLoadResult(exampleName: "Banner Native Styles No Assets (In-App)",
+//                              expectFailure: true)
+//    }
+//    
+//    func testGAMBannerNativeStyle_MRect_OK() {
+//        checkBannerLoadResult(exampleName: "Banner Native Styles (GAM) [MRect]")
+//    }
+//    
+//    func testGAMBannerNativeStyle_MRect_NoAssets() {
+//        checkBannerLoadResult(exampleName: "Banner Native Styles No Assets (GAM) [MRect]",
+//                              expectFailure: true)
+//    }
+//    
+//    func testGAMBannerNativeStyle_Fluid_OK() {
+//        checkBannerLoadResult(exampleName: "Banner Native Styles (GAM) [Fluid]")
+//    }
+//    
+//    func testMoPubBannerNativeStyle_OK() {
+//        checkBannerLoadResult(exampleName: "Banner Native Styles (MoPub)",
+//                              adapterBased: true,
+//                              callbacks: mopubBannerCallbacks)
+//    }
+//    
+//    func testMoPubBannerNativeStyle_NoAssets() {
+//        checkBannerLoadResult(exampleName: "Banner Native Styles No Assets (MoPub)",
+//                              adapterBased: true,
+//                              callbacks: mopubBannerCallbacks,
+//                              expectFailure: true)
+//    }
+//    
+//    // MARK: - Native Ads
+//    
+//    func testInAppNativeAd_OK() {
+//        checkNativeAdLoadResult(exampleName: "Native Ad (In-App)", successCallback: "getNativeAd success")
+//    }
+//    
+//    func testInAppNativeAd_Links() {
+//        checkNativeAdLoadResult(exampleName: "Native Ad Links (In-App)", successCallback: "getNativeAd success")
+//    }
+//    
+//    func testMoPubNativeAd_OK() {
+//        checkNativeAdLoadResult(exampleName: "Native Ad (MoPub) [OK, PBM Native AdAdapter]",
+//                                successCallback: "getNativeAd success")
+//    }
+//    
+//    func testMoPubNativeAdNib_OK() {
+//        checkNativeAdLoadResult(exampleName: "Native Ad (MoPub) [OK, PBM Native AdAdapter, Nib]",
+//                                successCallback: "getNativeAd success")
+//    }
+//    
+//    func testMoPubNativeAd_WithoutAdapters() {
+//        checkNativeAdLoadResult(exampleName: "Native Ad (MoPub) [OK, MPNativeAd]",
+//                                successCallback: "getNativeAd success")
+//    }
+//    
+//    func testMoPubNativeAd_noBids() {
+//        checkNativeAdLoadResult(exampleName: "Native Ad (MoPub) [noBids, MPNativeAd]",
+//                                successCallback: "getNativeAd success")
+//    }
+//    
+//    func testMoPubNativeAd_Video() {
+//        checkNativeAdLoadResult(exampleName: "Native Ad Video (MoPub) [OK, PBM Native AdAdapter]",
+//                                successCallback: "getNativeAd success")
+//    }
 }

@@ -100,7 +100,6 @@
 		AC27E9E624D9A69A000CD7EC /* FeedAdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC27E9E524D9A69A000CD7EC /* FeedAdTableViewCell.xib */; };
 		AC368F5B256C4E5D000D5E1B /* PBMNativeAdConfiguration+Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC368F5A256C4E5D000D5E1B /* PBMNativeAdConfiguration+Testing.swift */; };
 		AC4732B325D2E8BB0041EEBA /* PrebidMoPubNativeAdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4732B225D2E8BA0041EEBA /* PrebidMoPubNativeAdController.swift */; };
-		AC47859025F7BEE7001C75C5 /* PrebidNativeVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC47858F25F7BEE7001C75C5 /* PrebidNativeVideoUITests.swift */; };
 		AC4F253925DFF6300095C601 /* NativeAdViewBoxLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F253825DFF6300095C601 /* NativeAdViewBoxLinks.swift */; };
 		AC4F254B25E0112C0095C601 /* NativeAdViewBoxProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F254A25E0112C0095C601 /* NativeAdViewBoxProtocol.swift */; };
 		AC5A99AF267B63B70064A2CA /* PrebidMobileRendering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5A99AE267B63B70064A2CA /* PrebidMobileRendering.framework */; };
@@ -1151,7 +1150,6 @@
 				AC676D0C253465470043F0DE /* PrebidMRAID3UITest.swift in Sources */,
 				AC676D0A253462BE0043F0DE /* PrebidMRAIDResizeWithErrorsUITest.swift in Sources */,
 				340241152382B7E60038D61F /* RepeatedUITestCase.swift in Sources */,
-				AC47859025F7BEE7001C75C5 /* PrebidNativeVideoUITests.swift in Sources */,
 				5B437362217DB448009BD559 /* ConsolidatedBannerUITest.swift in Sources */,
 				AC676D04253442AE0043F0DE /* PrebidMRAIDResizeUITest.swift in Sources */,
 				ACC3667325307FD70051D8E8 /* PrebidInterstitialUITest.swift in Sources */,
