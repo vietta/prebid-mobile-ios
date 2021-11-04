@@ -30,7 +30,7 @@ public class MediaView: UIView, PBMPlayable, PBMAdViewManagerDelegate {
     
     @IBInspectable @objc public weak var delegate: MediaViewDelegate?
     
-    @objc private(set) public var mediaData: MediaData?     // filled on successful load
+    @objc private(set) internal var mediaData: MediaData?     // filled on successful load
     var mediaDataToLoad: MediaData?                         // present during the loading
     
     var adConfiguration: PBMAdConfiguration?
@@ -89,7 +89,7 @@ public class MediaView: UIView, PBMPlayable, PBMAdViewManagerDelegate {
         autoPlayOnVisible && mediaData != nil
     }
     
-    @objc public func load(_ mediaData: MediaData) {
+    @objc internal func load(_ mediaData: MediaData) {
         
         guard self.mediaData == nil else {
             reportFailureWithError(PBMError.replacingMediaDataInMediaView, markLoadingStopped: false)

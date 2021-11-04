@@ -15,7 +15,7 @@
 
 import Foundation
 
-public class MediaData: NSObject {
+internal class MediaData: NSObject {
     
     @objc public let mediaAsset: PBMNativeAdMarkupAsset
     @objc public let nativeAdHooks: PBMNativeAdMediaHooks
