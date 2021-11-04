@@ -35,7 +35,7 @@ public class AdUnitConfig: NSObject, NSCopying {
     }
     
     var _nativeAdConfiguration: NativeAdConfiguration?
-    @objc public var nativeAdConfiguration: NativeAdConfiguration? {
+    @objc internal var nativeAdConfiguration: NativeAdConfiguration? {
         get { _nativeAdConfiguration }
         set {
             _nativeAdConfiguration = newValue?.copy() as? NativeAdConfiguration

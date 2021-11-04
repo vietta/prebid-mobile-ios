@@ -55,7 +55,7 @@ public class MoPubBannerAdUnit : NSObject {
         set { adUnitConfig.videoPlacementType = PBMVideoPlacementType(rawValue: newValue.rawValue) ?? .undefined }
     }
 
-    public var nativeAdConfig: NativeAdConfiguration? {
+    internal var nativeAdConfig: NativeAdConfiguration? {
         get { adUnitConfig.nativeAdConfiguration }
         set { adUnitConfig.nativeAdConfiguration = newValue }
     }

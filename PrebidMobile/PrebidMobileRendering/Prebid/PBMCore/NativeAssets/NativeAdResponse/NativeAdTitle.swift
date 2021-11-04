@@ -15,7 +15,7 @@
 
 import Foundation
 
-public class NativeAdTitle: NativeAdAsset {
+internal class NativeAdTitle: NativeAdAsset {
 
     /// The text associated with the text element.
     @objc public var text: String { nativeAdMarkupAsset.title?.text ?? "" }

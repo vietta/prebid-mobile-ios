@@ -15,7 +15,7 @@
 
 import Foundation
 
-public class PBRNativeAssetData : PBRNativeAsset {
+internal class PBRNativeAssetData : PBRNativeAsset {
     /// [Required]
     /// [Integer]
     /// Type ID of the element supported by the publisher.

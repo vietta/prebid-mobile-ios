@@ -15,7 +15,7 @@
 
 import Foundation
 
-public class NativeAdData: NativeAdAsset {
+internal class NativeAdData: NativeAdAsset {
 
     /// The type of data element being submitted from the Data Asset Types table.
     /// Required for assetsurl/dcourl responses, not required for embedded asset responses.

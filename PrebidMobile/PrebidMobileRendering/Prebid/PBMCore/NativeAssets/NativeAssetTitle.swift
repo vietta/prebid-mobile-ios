@@ -15,7 +15,7 @@
 
 import Foundation
 
-public class PBRNativeAssetTitle: PBRNativeAsset {
+internal class PBRNativeAssetTitle: PBRNativeAsset {
     /// [Required]
     /// [Integer]
     /// Maximum length of the text in the title element.

@@ -115,15 +115,16 @@
     if (adConfiguration.adFormat != PBMAdFormatNativeInternal) {
         model.html = adMarkup;
     } else {
-        if (adConfiguration.nativeAdConfiguration.nativeStylesCreative.length == 0) {
-            PBMLogError(@"Native Styles creative string is empty.");
-            model.html = @"";
-        } else {
-            html = [PBMNativeFunctions populateNativeAdTemplate:adConfiguration.nativeAdConfiguration.nativeStylesCreative
-                                                  withTargeting:bid.targetingInfo
-                                                          error:nil];
-            model.html = html ?: @"";
-        }
+        /// #416 - commented due to native ad private api
+//        if (adConfiguration.nativeAdConfiguration.nativeStylesCreative.length == 0) {
+//            PBMLogError(@"Native Styles creative string is empty.");
+//            model.html = @"";
+//        } else {
+//            html = [PBMNativeFunctions populateNativeAdTemplate:adConfiguration.nativeAdConfiguration.nativeStylesCreative
+//                                                  withTargeting:bid.targetingInfo
+//                                                          error:nil];
+//            model.html = html ?: @"";
+//        }
     }
     
     model.width = bid.size.width;

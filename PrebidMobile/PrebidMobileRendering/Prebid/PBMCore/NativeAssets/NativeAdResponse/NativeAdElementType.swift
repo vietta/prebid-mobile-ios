@@ -15,7 +15,7 @@
 
 import Foundation
 
-@objc public enum NativeAdElementType : Int {
+@objc internal enum NativeAdElementType : Int {
     case title
     case text
     case icon

@@ -16,7 +16,7 @@
 import Foundation
 import UIKit
 
-@objc public protocol NativeAdUIDelegate where Self: NSObject {
+@objc internal protocol NativeAdUIDelegate where Self: NSObject {
     
     /*!
      @abstract Asks the delegate for a view controller instance to use for presenting modal views

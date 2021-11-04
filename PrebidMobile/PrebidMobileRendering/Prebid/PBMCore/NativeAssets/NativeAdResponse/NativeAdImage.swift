@@ -15,7 +15,7 @@
 
 import Foundation
 
-public class NativeAdImage: NativeAdAsset {
+internal class NativeAdImage: NativeAdAsset {
 
     /// [Integer]
     /// The type of image element being submitted from the Image Asset Types table.

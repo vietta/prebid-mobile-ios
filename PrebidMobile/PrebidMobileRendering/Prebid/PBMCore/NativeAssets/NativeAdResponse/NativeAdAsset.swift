@@ -15,7 +15,7 @@
 
 import Foundation
 
-public class NativeAdAsset: NSObject {
+internal class NativeAdAsset: NSObject {
 
     /// [Integer]
     /// Optional if assetsurl/dcourl is being used

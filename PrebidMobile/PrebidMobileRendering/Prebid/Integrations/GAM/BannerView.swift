@@ -57,7 +57,7 @@ public class BannerView: UIView,
         set { adUnitConfig.videoPlacementType = PBMVideoPlacementType(rawValue: newValue.rawValue) ?? .undefined }
     }
     
-    @objc public var nativeAdConfig: NativeAdConfiguration? {
+    @objc internal var nativeAdConfig: NativeAdConfiguration? {
         get { adUnitConfig.nativeAdConfiguration }
         set { adUnitConfig.nativeAdConfiguration = newValue }
     }

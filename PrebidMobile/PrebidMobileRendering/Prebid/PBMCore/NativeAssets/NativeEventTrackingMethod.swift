@@ -15,6 +15,7 @@
 
 import Foundation
 
+/// #416 - can't make it private or internal
 @objc public enum NativeEventTrackingMethod : Int {
     case img                = 1 /// Image-pixel tracking - URL provided will be inserted as a 1x1 pixel at the time of the event.
     case js                 = 2 /// Javascript-based tracking - URL provided will be inserted as a js tag at the time of the event.

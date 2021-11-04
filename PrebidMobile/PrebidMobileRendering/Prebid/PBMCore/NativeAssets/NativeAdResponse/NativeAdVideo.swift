@@ -15,7 +15,7 @@
 
 import Foundation
 
-public class NativeAdVideo: NativeAdAsset {
+internal class NativeAdVideo: NativeAdAsset {
     
     /// Media data describing this asset
     @objc private(set) public var mediaData: MediaData!

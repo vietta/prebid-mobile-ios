@@ -15,7 +15,7 @@
 
 import Foundation
 
-public class MoPubNativeAdUnit : NSObject {
+internal class MoPubNativeAdUnit : NSObject {
     
     weak var adObject: NSObject?
     var completion: ((FetchDemandResult) -> Void)?

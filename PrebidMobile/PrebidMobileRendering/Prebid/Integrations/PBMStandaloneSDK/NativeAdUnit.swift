@@ -15,7 +15,7 @@
 
 import Foundation
 
-public class NativeAdUnit: PBMBaseAdUnit {
+internal class NativeAdUnit: PBMBaseAdUnit {
     
     // MARK: - Required properties
     @objc public override var configId: String { super.configId }
