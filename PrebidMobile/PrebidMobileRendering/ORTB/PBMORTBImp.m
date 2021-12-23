@@ -56,6 +56,10 @@
     ret[@"clickbrowser"] = self.clickbrowser;
     ret[@"secure"] = self.secure;
     
+    if(self.storedAuctionResponse) {
+        ret[@"storedauctionresponse"] = @{@"id":self.storedAuctionResponse};
+    }
+    
     ret[@"ext"] = [self extDictionary];
     
     ret = [ret pbmCopyWithoutEmptyVals];
@@ -91,6 +95,8 @@
     _tagid = jsonDictionary[@"tagid"];
     _clickbrowser = jsonDictionary[@"clickbrowser"];
     _secure = jsonDictionary[@"secure"];
+    
+    _storedAuctionResponse = jsonDictionary[@"storedauctionresponse"][@"id"];
     
     _extPrebid = [[PBMORTBImpExtPrebid alloc] initWithJsonDictionary:jsonDictionary[@"ext"][@"prebid"]];
     _extSkadn = [[PBMORTBImpExtSkadn alloc] initWithJsonDictionary:jsonDictionary[@"ext"][@"skadn"]];

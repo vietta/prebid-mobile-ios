@@ -112,6 +112,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, nullable) NSDictionary<NSString *, NSArray<NSString *> *> *extContextData;
 
+//Set as type string, stored auction responses signal Prebid Server to respond with a static response
+//matching the storedAuctionResponse found in the Prebid Server Database,
+//useful for debugging and integration testing.
+@property (nonatomic, strong, nullable) NSString *storedAuctionResponse;
+
 - (instancetype)init;
 
 @end
