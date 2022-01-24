@@ -93,7 +93,7 @@
     if (!(host != nil && path != nil && uuid != nil)) {
         return nil;
     }
-    return [NSString stringWithFormat:@"https://%@%@?uuid=%@", host, path, uuid];
+    return [NSString stringWithFormat:@"http://%@%@?uuid=%@", host, path, uuid];
 }
 
 /**
