@@ -322,10 +322,6 @@ class RequestBuilder: NSObject {
     func openrtbDevice(adUnit: AdUnit?) -> [AnyHashable: Any]? {
         var deviceDict: [AnyHashable: Any] = [:]
 
-        if (RequestBuilder.myUserAgent != "") {
-            deviceDict["ua"] = RequestBuilder.myUserAgent
-        }
-
         deviceDict["geo"] = openrtbGeo()
 
         deviceDict["make"] = "Apple"
