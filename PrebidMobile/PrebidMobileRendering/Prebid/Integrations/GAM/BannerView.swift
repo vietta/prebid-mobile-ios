@@ -28,9 +28,8 @@ public class BannerView: UIView,
     
     // MARK: - Public Properties
     
-    @objc public var bannerParameters: BannerParameters? {
+    @objc public var bannerParameters: BannerParameters {
         get { adUnitConfig.adConfiguration.bannerParameters }
-        set { adUnitConfig.adConfiguration.bannerParameters = newValue }
     }
     
     @objc public var videoParameters: VideoParameters? {

@@ -28,7 +28,7 @@ public class AdConfiguration: AutoRefreshCountConfig {
     /**
      Describes an OpenRTB banner object
      */
-    public var bannerParameters: BannerParameters?
+    public lazy var bannerParameters = BannerParameters()
     
     /**
      Describes an OpenRTB video object

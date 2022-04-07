@@ -17,9 +17,8 @@ import Foundation
 @objcMembers
 public class MediationBaseInterstitialAdUnit : NSObject {
     
-    public var bannerParameters: BannerParameters? {
+    public var bannerParameters: BannerParameters {
         get { adUnitConfig.adConfiguration.bannerParameters }
-        set { adUnitConfig.adConfiguration.bannerParameters = newValue }
     }
     
     public var videoParameters: VideoParameters? {
