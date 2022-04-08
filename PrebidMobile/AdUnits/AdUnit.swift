@@ -163,11 +163,12 @@ import ObjectiveC.runtime
                 } catch {
                     Log.error("Error saving bid content to cache: \(error.localizedDescription)")
                 }
+            } else {
+                completion(.prebidDemandFetchSuccess)
             }
         } else {
             completion(.prebidDemandNoBids)
         }
-        completion(.prebidUnknownError)
     }
 
     // MARK: - adunit context data aka inventory data (imp[].ext.context.data)
