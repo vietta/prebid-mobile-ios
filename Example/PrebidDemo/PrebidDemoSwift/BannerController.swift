@@ -127,7 +127,7 @@ class BannerController:
     }
     
     func setupAndLoadInAppBanner() {
-        setupOpenxRenderingBanner()
+        setupPrebidRenderingBanner()
         
         switch bannerFormat {
         case .html:
@@ -138,7 +138,7 @@ class BannerController:
     }
     
     func setupAndLoadGAMRendering() {
-        setupOpenxRenderingBanner()
+        setupPrebidRenderingBanner()
         
         switch bannerFormat {
         case .html:
@@ -149,7 +149,7 @@ class BannerController:
     }
     
     func setupAndLoadAdMobRendering() {
-        setupOpenxRenderingBanner()
+        setupPrebidRenderingBanner()
         
         setupAdMobBanner(adUnitId: "ca-app-pub-5922967660082475/9483570409", width: 320, height: 50)
         loadAdMobRenderingBanner()
@@ -201,9 +201,11 @@ class BannerController:
     
     // MARK: Setup PBS Rendering
     
-    func setupOpenxRenderingBanner() {
+    func setupPrebidRenderingBanner() {
         Prebid.shared.accountID = "0689a263-318d-448b-a3d4-b02e8a709d9d"
-        try! Prebid.shared.setCustomPrebidServer(url: "https://prebid.openx.net/openrtb2/auction")
+        try! Prebid.shared.setCustomPrebidServer(url: "https://prebid-server-test-j.prebid.org/openrtb2/auction")
+        
+        Prebid.shared.storedAuctionResponse = "response-prebid-banner-320-50"
     }
 
     // MARK: Setup AdServer - GAM
@@ -247,9 +249,9 @@ class BannerController:
     }
     
     func loadInAppBanner() {
-        let size = CGSize(width: width, height: height)
+        let size = CGSize(width: 320, height: 50)
         prebidBannerView = BannerView(frame: CGRect(origin: .zero, size: size),
-                              configID: "50699c03-0910-477c-b4a4-911dbe2b9d42",
+                              configID: "imp-prebid-banner-320-50",
                               adSize: CGSize(width: 320, height: 50))
                                 
         prebidBannerView.delegate = self
