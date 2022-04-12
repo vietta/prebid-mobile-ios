@@ -28,8 +28,7 @@ fileprivate let storedImpDisplayBanner = "imp-prebid-banner-320-50"
 fileprivate let storedImpVideoBanner = "imp-prebid-video-outstream"
 
 // Stored Responses
-fileprivate let storedResponseDisplayBannerOriginal = "response-prebid-banner-320-50-original"
-fileprivate let storedResponseDisplayBannerRendering = "response-prebid-banner-320-50"
+fileprivate let storedResponseDisplayBanner = "response-prebid-banner-320-50"
 
 fileprivate let storedResponseVideoBanner = "response-prebid-video-outstream"
 
@@ -167,7 +166,7 @@ class BannerController:
     
     func setupAndLoadAdMobRendering() {
         
-        setupPrebidServer(storedResponse: storedResponseDisplayBannerRendering)
+        setupPrebidServer(storedResponse: storedResponseDisplayBanner)
 
         setupAdMobBanner(adUnitId: adMobAdUnitDisplayBannerOriginal,
                          width: 320, height: 50)
@@ -179,7 +178,7 @@ class BannerController:
     
     func setupBannerAdUnit() {
         
-        setupPrebidServer(storedResponse: storedResponseDisplayBannerOriginal)
+        setupPrebidServer(storedResponse: storedResponseDisplayBanner)
         
         let bannerAdUnit = BannerAdUnit(configId: storedImpDisplayBanner,
                                         size: CGSize(width: 320, height: 50))
@@ -237,7 +236,7 @@ class BannerController:
     }
     
     func loadInAppBanner() {
-        setupPrebidServer(storedResponse: storedResponseDisplayBannerRendering)
+        setupPrebidServer(storedResponse: storedResponseDisplayBanner)
 
         let size = CGSize(width: 320, height: 50)
         prebidBannerView = BannerView(frame: CGRect(origin: .zero, size: size),
@@ -252,7 +251,7 @@ class BannerController:
     }
     
     func loadGAMRenderingBanner() {
-        setupPrebidServer(storedResponse: storedResponseDisplayBannerRendering)
+        setupPrebidServer(storedResponse: storedResponseDisplayBanner)
 
         let size = CGSize(width: 320, height: 50)
         
